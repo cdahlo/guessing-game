@@ -1,12 +1,13 @@
-
-    var name = prompt('What is your name?');
+ var name = prompt('What is your name?');
     alert('Hello, ' + name + '.');
     var feeling = prompt('How you feeling today?');
     alert('Thanks for letting me know that you are ' + feeling + ', ' + name + '.');
     var score = 0;
-    var gameQ1 = prompt('Was Ivar born in Alaska?');
+    var arrayAffirmativeAnswers = ['yes', 'yeah', 'yep', 'y', '1'];
 
-      if (gameQ1.toLowerCase() === 'yes' || 'yeah' || 'y' || 'yep' || 'of course') {
+    var gameQ1 = prompt('Was Ivar born in Alaska?').toLowerCase();
+
+      if (arrayAffirmativeAnswers.indexOf(gameQ1) > -1) {
       score += 1;
       alert('Nice guess!');
       } else {
@@ -15,7 +16,7 @@
 
     var gameQ2 = prompt('Is his last name Lee?');
 
-      if (gameQ2.toLowerCase() == 'yes' || 'yeah' || 'y' || 'yep' || 'of course') {
+      if (arrayAffirmativeAnswers.indexOf(gameQ2) > -1) {
       score += 1;
       alert('Nice guess!');
       } else {
@@ -24,11 +25,30 @@
 
     var gameQ3 = prompt('Is he 28 years old?');
 
-      if (gameQ3.toLowerCase() == 'yes' || 'yeah' || 'y' || 'yep' || 'of course')z {
+      if (arrayAffirmativeAnswers.indexOf(gameQ3) > -1) {
       score += 1;
       alert('Nice guess!');
       } else {
       alert('Actually, he is!');
       console.log('The user answered incorrectly, he is 28.' + gameQ3);}
 
-    alert('You got ' + score + ' out of 3 correct.');
+    var gameQ4 = prompt('Is coffee good?');
+
+      if (arrayAffirmativeAnswers.indexOf(gameQ4) > -1) {
+      score += 1;
+      alert('Nice guess!');
+      } else {
+      alert('Actually, it is!');
+      console.log('The user answered incorrectly, he is 28.' + gameQ4);}
+
+    var gameQ5 = prompt('Guess the secret number between 1 and 3');
+
+      if (arrayAffirmativeAnswers.indexOf(gameQ5) > -1) {
+      score += 1;
+      alert('Nice guess!');
+      } else {
+      alert('Actually, it was 1!');
+      console.log('The user answered incorrectly, the secret number was 1' + gameQ5);}
+
+
+    alert('You got ' + score + ' out of 5 correct.');
