@@ -14,7 +14,7 @@
       alert('Actually, he was!');
       console.log('The user answered incorrectly, Ivar was born in Alaska.' + gameQ1);}
 
-    var gameQ2 = prompt('Is his last name Lee?');
+    var gameQ2 = prompt('Is his last name Lee?').toLowerCase();
 
       if (arrayAffirmativeAnswers.indexOf(gameQ2) > -1) {
       score += 1;
@@ -23,7 +23,7 @@
       alert('Actually, it is!');
       console.log('The user answered incorrectly, his last name is Lee.' + gameQ2);}
 
-    var gameQ3 = prompt('Is he 28 years old?');
+    var gameQ3 = prompt('Is he 28 years old?').toLowerCase();
 
       if (arrayAffirmativeAnswers.indexOf(gameQ3) > -1) {
       score += 1;
@@ -32,7 +32,7 @@
       alert('Actually, he is!');
       console.log('The user answered incorrectly, he is 28.' + gameQ3);}
 
-    var gameQ4 = prompt('Is coffee good?');
+    var gameQ4 = prompt('Is coffee good?').toLowerCase();
 
       if (arrayAffirmativeAnswers.indexOf(gameQ4) > -1) {
       score += 1;
