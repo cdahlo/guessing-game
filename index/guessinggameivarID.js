@@ -6,15 +6,29 @@
     var arrayAffirmativeAnswers = ['yes', 'yeah', 'yep', 'y', '1'];
 
 
+/////////////////////////////////////////////////
+    var ans1 = document.getElementById('answer1');
+
+    question1();
+
+    function question1() {
     var gameQ1 = prompt('Was Ivar born in Alaska?').toLowerCase();
 
       if (arrayAffirmativeAnswers.indexOf(gameQ1) > -1) {
       score += 1;
-      alert('Nice guess!');
+      //alert('Nice guess!');
+      ans1.innerHTML = 'CORRECT!';
       } else {
-      alert('Actually, he was!');
+      //alert('Actually, he was!');
+      ans1.innerHTML = "NO!";
       console.log('The user answered incorrectly, Ivar was born in Alaska.' + gameQ1);}
+    }
+//////////////////////////////////////////////////
 
+
+
+
+/////////////////////////////////////////////////
     var gameQ2 = prompt('Is his last name Lee?').toLowerCase();
 
       if (arrayAffirmativeAnswers.indexOf(gameQ2) > -1) {
@@ -53,3 +67,5 @@
 
 
     alert('You got ' + score + ' out of 5 correct.');
+
+

@@ -1,0 +1,12 @@
+1 How does html tell S where content needs to go?
+
+id attributes
+
+2 How does JS know where to put content?
+
+var ans1 = document
+getElementById('answer1');
+
+3 How does actually populate the html?
+
+ans2.innerHTML = "you're correct!"
